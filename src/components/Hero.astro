@@ -1,0 +1,52 @@
+---
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
+const heroImg = `${base}images/hero.svg`;
+---
+<section class="relative overflow-hidden">
+  <div class="container-page pt-14 md:pt-20 pb-section">
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+      <div class="lg:col-span-6 reveal">
+        <span class="eyebrow">Kamiyama Marugoto College of Technology</span>
+        <h1 class="mt-5 text-display-xl font-semibold text-ink">
+          テクノロジー×デザインで、<br class="hidden md:block" />
+          人間の未来を変える学校。
+        </h1>
+        <p class="en mt-4">
+          A 5-year private college in Kamiyama, Tokushima — nurturing creators who reshape the future with technology, design, and entrepreneurship.
+        </p>
+        <p class="mt-8 max-w-prose text-ink-soft leading-relaxed">
+          神山まるごと高専は、徳島県・神山町に2023年に開校した私立の高等専門学校です。起業家精神とものづくりの力を併せ持つ人を育てます。
+          <span class="en mt-2">
+            Founded in 2023 in the mountain town of Kamiyama, we combine engineering, design, and entrepreneurship into a single 5-year program.
+          </span>
+        </p>
+        <div class="mt-10 flex flex-wrap gap-3">
+          <a class="btn-primary no-underline" href="#about">
+            学校を知る
+            <span class="text-paper/70 text-xs ml-1">Explore</span>
+          </a>
+          <a class="btn-outline no-underline" href="#access">
+            アクセス
+            <span class="text-ink-muted text-xs ml-1">Access</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6 reveal">
+        <figure class="relative aspect-[4/5] md:aspect-[5/6] overflow-hidden rounded-3xl bg-paper-warm ring-1 ring-black/5 shadow-soft">
+          <img
+            src={heroImg}
+            alt="神山町の山あいに佇むキャンパスのイメージ"
+            class="h-full w-full object-cover"
+            loading="eager"
+            decoding="async"
+          />
+          <figcaption class="absolute bottom-4 left-4 right-4 text-xs text-ink-muted bg-paper/80 backdrop-blur-sm rounded-full px-4 py-2 w-fit">
+            Placeholder image — 正式な写真素材に差し替え予定
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-paper text-ink font-sans;
+    font-feature-settings: "palt" 1;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight text-ink;
+  }
+  /* 日英併記: 英語補助テキスト */
+  .en {
+    @apply block text-ink-muted text-sm md:text-base font-normal tracking-wide;
+  }
+  .jp-lead {
+    @apply block text-ink;
+  }
+  a {
+    @apply underline-offset-4;
+  }
+  ::selection {
+    background: #0f766e;
+    color: #fff;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-page px-6 md:px-10;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm md:text-base font-medium transition;
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent;
+  }
+  .btn-primary {
+    @apply btn bg-ink text-paper hover:bg-ink-soft;
+  }
+  .btn-outline {
+    @apply btn border border-ink/20 text-ink hover:border-ink hover:bg-ink/5;
+  }
+  .eyebrow {
+    @apply inline-block text-xs md:text-sm font-medium uppercase tracking-[0.18em] text-accent;
+  }
+  .section {
+    @apply py-section;
+  }
+  .card {
+    @apply rounded-2xl bg-white/70 backdrop-blur-sm ring-1 ring-black/5 shadow-soft;
+  }
+
+  /* スクロール時のフェードイン */
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 700ms ease, transform 700ms ease;
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+    html { scroll-behavior: auto; }
+  }
+}

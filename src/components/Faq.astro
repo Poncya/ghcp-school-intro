@@ -1,0 +1,59 @@
+---
+const faqs = [
+  {
+    q: 'どんな学校ですか？',
+    qEn: 'What kind of school is this?',
+    a: 'テクノロジー・デザイン・起業家精神を統合的に学ぶ、5年一貫の私立高等専門学校（高専）です。',
+    aEn: 'A private 5-year college that integrates technology, design, and entrepreneurship.',
+  },
+  {
+    q: '全寮制ですか？',
+    qEn: 'Is it residential?',
+    a: 'はい、全寮制です。多様な仲間と暮らしながら学びます。',
+    aEn: 'Yes. Students live on campus and learn together.',
+  },
+  {
+    q: '入学に必要なものは？',
+    qEn: 'What are the admission requirements?',
+    a: '詳細は公式サイトの募集要項を参照してください。',
+    aEn: 'Please refer to the official admissions page for details.',
+  },
+  {
+    q: '学費はどれくらいですか？',
+    qEn: 'What is the tuition?',
+    a: '最新の情報は公式サイトで公開されています。',
+    aEn: 'Up-to-date information is published on the official website.',
+  },
+];
+---
+<section id="faq" class="section bg-paper">
+  <div class="container-page">
+    <div class="max-w-3xl reveal">
+      <span class="eyebrow">FAQ / よくある質問</span>
+      <h2 class="mt-4 text-display-lg font-semibold">よくある質問</h2>
+      <p class="en mt-3">Frequently asked questions.</p>
+    </div>
+
+    <ul class="mt-12 divide-y divide-black/10 border-y border-black/10">
+      {faqs.map((f) => (
+        <li class="reveal">
+          <details class="group py-5 md:py-6">
+            <summary class="flex cursor-pointer list-none items-start justify-between gap-6">
+              <div>
+                <p class="text-base md:text-lg font-semibold text-ink">{f.q}</p>
+                <p class="en mt-1">{f.qEn}</p>
+              </div>
+              <span aria-hidden="true" class="mt-1 inline-flex h-7 w-7 flex-none items-center justify-center rounded-full ring-1 ring-ink/20 text-ink-muted transition group-open:rotate-45 group-open:bg-ink group-open:text-paper">
+                +
+              </span>
+            </summary>
+            <div class="mt-4 max-w-prose text-ink-soft leading-relaxed">
+              <p>{f.a}</p>
+              <p class="en mt-2">{f.aEn}</p>
+            </div>
+          </details>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
