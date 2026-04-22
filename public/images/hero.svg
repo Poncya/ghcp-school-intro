@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Kamiyama mountain placeholder">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eaf3ef"/>
+      <stop offset="100%" stop-color="#f3efe7"/>
+    </linearGradient>
+    <linearGradient id="m1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#355d52"/>
+      <stop offset="100%" stop-color="#1f3a33"/>
+    </linearGradient>
+    <linearGradient id="m2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5c8a7c"/>
+      <stop offset="100%" stop-color="#2f5449"/>
+    </linearGradient>
+    <linearGradient id="m3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#88b0a2"/>
+      <stop offset="100%" stop-color="#4f7a6c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#sky)"/>
+  <circle cx="620" cy="220" r="90" fill="#f8ede0" opacity="0.9"/>
+  <path d="M0 760 L120 560 L240 680 L380 500 L520 700 L680 560 L800 720 L800 1000 L0 1000 Z" fill="url(#m1)"/>
+  <path d="M0 820 L100 700 L230 780 L360 660 L500 800 L640 700 L800 800 L800 1000 L0 1000 Z" fill="url(#m2)" opacity="0.85"/>
+  <path d="M0 880 L140 800 L280 870 L440 790 L600 870 L800 820 L800 1000 L0 1000 Z" fill="url(#m3)" opacity="0.9"/>
+  <g fill="#fafaf7" opacity="0.85">
+    <rect x="340" y="740" width="40" height="40"/>
+    <polygon points="340,740 360,715 380,740"/>
+    <rect x="385" y="755" width="30" height="25"/>
+    <polygon points="385,755 400,738 415,755"/>
+  </g>
+</svg>

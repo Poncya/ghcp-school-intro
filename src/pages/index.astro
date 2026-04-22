@@ -1,16 +1,21 @@
 ---
+import Layout from '../layouts/Layout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import Hero from '../components/Hero.astro';
+import Features from '../components/Features.astro';
+import Learn from '../components/Learn.astro';
+import Access from '../components/Access.astro';
+import Faq from '../components/Faq.astro';
+import SiteFooter from '../components/SiteFooter.astro';
 ---
-<!doctype html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GitHub Copilot 学校紹介</title>
-  </head>
-  <body>
-    <main>
-      <h1>GitHub Copilot 学校紹介</h1>
-      <p>GitHub Pages で公開中のサイトです。</p>
-    </main>
-  </body>
-</html>
+<Layout>
+  <SiteHeader />
+  <main id="main">
+    <Hero />
+    <Features />
+    <Learn />
+    <Access />
+    <Faq />
+  </main>
+  <SiteFooter />
+</Layout>

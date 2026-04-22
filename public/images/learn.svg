@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Learning placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3efe7"/>
+      <stop offset="100%" stop-color="#e6ddce"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <g stroke="#0f766e" stroke-width="2" fill="none" opacity="0.35">
+    <circle cx="260" cy="380" r="160"/>
+    <circle cx="480" cy="560" r="200"/>
+    <circle cx="380" cy="780" r="120"/>
+  </g>
+  <g fill="#0f766e" opacity="0.8">
+    <rect x="300" y="430" width="200" height="8" rx="4"/>
+    <rect x="300" y="460" width="140" height="8" rx="4"/>
+    <rect x="300" y="490" width="170" height="8" rx="4"/>
+  </g>
+  <g fill="#2b2b2b" opacity="0.7">
+    <rect x="200" y="640" width="400" height="14" rx="7"/>
+    <rect x="200" y="670" width="320" height="10" rx="5"/>
+    <rect x="200" y="694" width="360" height="10" rx="5"/>
+  </g>
+</svg>

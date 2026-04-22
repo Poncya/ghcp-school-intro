@@ -1,0 +1,52 @@
+---
+const features = [
+  {
+    jp: '起業家精神を育む',
+    en: 'Entrepreneurial mindset',
+    body: '課題発見から事業化までを5年かけて実践。社会に価値を届けるプロセスを体得します。',
+    bodyEn: 'From problem discovery to venture creation — students practice how to deliver value to society.',
+  },
+  {
+    jp: 'デザインとテクノロジーの融合',
+    en: 'Design × Technology',
+    body: 'プログラミング、ハードウェア、デザインを横断して学ぶカリキュラム。',
+    bodyEn: 'A cross-disciplinary curriculum spanning programming, hardware, and design.',
+  },
+  {
+    jp: '全寮制のコミュニティ',
+    en: 'Residential community',
+    body: '多様な背景を持つ仲間と暮らしながら学ぶ、全寮制の環境。',
+    bodyEn: 'A residential program where students live and learn alongside peers from diverse backgrounds.',
+  },
+  {
+    jp: '神山という舞台',
+    en: 'Rooted in Kamiyama',
+    body: '自然・地域・社会と密接に関わりながら、現実の課題に向き合います。',
+    bodyEn: 'Engaging with real challenges through deep ties to nature, community, and society in Kamiyama.',
+  },
+];
+---
+<section id="about" class="section bg-paper">
+  <div class="container-page">
+    <div class="max-w-3xl reveal">
+      <span class="eyebrow">About / 特徴</span>
+      <h2 class="mt-4 text-display-lg font-semibold">
+        5年間で、つくる力と届ける力を。
+      </h2>
+      <p class="en mt-3">Five years to build — and to deliver what you build to the world.</p>
+    </div>
+
+    <ul class="mt-14 grid gap-6 md:gap-8 md:grid-cols-2">
+      {features.map((f) => (
+        <li class="card p-7 md:p-9 reveal">
+          <div class="flex items-baseline justify-between gap-4">
+            <h3 class="text-xl md:text-2xl font-semibold">{f.jp}</h3>
+            <span class="text-xs text-ink-muted tracking-[0.14em] uppercase">{f.en}</span>
+          </div>
+          <p class="mt-4 text-ink-soft leading-relaxed">{f.body}</p>
+          <p class="en mt-2">{f.bodyEn}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
